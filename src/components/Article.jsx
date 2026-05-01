@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Article ({title, date, preview}) {
+function Article ({title, date="January 1, 1970", preview}) {
     return(
         <article id="article">
             <h3>{title}</h3>
@@ -12,7 +12,7 @@ function Article ({title, date, preview}) {
 }
 Article.propTypes = {
     title: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
+    date: PropTypes.string,
     preview: PropTypes.string.isRequired
 }
 

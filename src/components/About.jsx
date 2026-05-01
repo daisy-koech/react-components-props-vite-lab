@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function About ({image, about}){
+function About ({image="https://via.placeholder.com/215", about}){
     return(
-        <aside id="about">
+        <aside>
             <img src={image} alt="blog logo"/>
             <p>{about}</p>
         </aside>
@@ -11,8 +11,8 @@ function About ({image, about}){
 }
 About.propTypes ={
     about: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired
-}
+    image: PropTypes.string
+};
 
 export default About;
 

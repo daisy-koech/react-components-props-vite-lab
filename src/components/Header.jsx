@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 function Header ({name}) {
     return(
-        <div id="header">
+        <header>
             <h1>{name}</h1>
-        </div>
+        </header>
     )
 }
 Header.propTypes ={
